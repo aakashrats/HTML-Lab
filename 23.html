@@ -1,0 +1,198 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Fields Demonstration</title>
+  </head>
+  <body>
+    <h2>HTML Input Fields Demonstration</h2>
+    <p>
+      This page demonstrates various HTML input fields without using a form element. 
+      While forms are typically used to submit data, inputs can be used independently for various UI interactions.
+    </p>
+
+    <fieldset>
+      <legend>Text Input Types</legend>
+
+      <h3>Basic Text Input</h3>
+      <label>Text Input:
+        <input type="text" placeholder="Enter some text" />
+      </label>
+
+      <h3>Password Input</h3>
+      <label>Password Input:
+        <input type="password" placeholder="Enter password" />
+      </label>
+
+      <h3>Email Input</h3>
+      <label>Email Input:
+        <input type="email" placeholder="name@domain.com" />
+      </label>
+
+      <h3>Search Input</h3>
+      <label>Search Input:
+        <input type="search" placeholder="Search..." />
+      </label>
+
+      <h3>URL Input</h3>
+      <label>URL Input:
+        <input type="url" placeholder="https://example.com" />
+      </label>
+
+      <h3>Telephone Input</h3>
+      <label>Telephone Input:
+        <input type="tel" placeholder="(123) 456-7890" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Numeric Input Types</legend>
+
+      <h3>Number Input</h3>
+      <label>Number Input:
+        <input type="number" placeholder="50" />
+      </label>
+
+      <h3>Range Slider</h3>
+      <label>Range Input:
+        <input type="range" min="0" max="100" />
+      </label> 50
+    </fieldset>
+
+    <fieldset>
+      <legend>Date and Time Input Types</legend>
+
+      <h3>Date Input</h3>
+      <label>Date Input:
+        <input type="date" />
+      </label>
+
+      <h3>Time Input</h3>
+      <label>Time Input:
+        <input type="time" />
+      </label>
+
+      <h3>DateTime-Local Input</h3>
+      <label>DateTime-Local Input:
+        <input type="datetime-local" />
+      </label>
+
+      <h3>Month Input</h3>
+      <label>Month Input:
+        <input type="month" />
+      </label>
+
+      <h3>Week Input</h3>
+      <label>Week Input:
+        <input type="week" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Selection Input Types</legend>
+
+      <h3>Checkbox Inputs</h3>
+      <label><input type="checkbox" /> Reading</label>
+      <label><input type="checkbox" /> Sports</label>
+      <label><input type="checkbox" /> Music</label>
+
+      <h3>Radio Button Inputs</h3>
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+      <label><input type="radio" name="gender" value="other" /> Other</label>
+
+      <h3>Color Picker</h3>
+      <label>Color Picker:
+        <input type="color" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Special Input Types</legend>
+
+      <h3>File Input</h3>
+      <label>File Input:
+        <input type="file" />
+      </label>
+
+      <h3>Multiple File Input</h3>
+      <label>Multiple File Input:
+        <input type="file" multiple />
+      </label>
+
+      <h3>Hidden Input (Not Visible)</h3>
+      <i>Note: There is a hidden input field with value "hidden-value", but it's not visible.</i>
+      <input type="hidden" value="hidden-value" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Attributes Demonstration</legend>
+
+      <h3>Required Attribute</h3>
+      <label>Required Input:
+        <input type="text" required placeholder="This field is required" />
+      </label>
+
+      <h3>Readonly Attribute</h3>
+      <label>Readonly Input:
+        <input type="text" readonly value="Read-only text" />
+      </label>
+
+      <h3>Disabled Attribute</h3>
+      <label>Disabled Input:
+        <input type="text" disabled placeholder="This field is disabled" />
+      </label>
+
+      <h3>Pattern Attribute</h3>
+      <label>Pattern Input (Only 3 digits):
+        <input type="text" pattern="\d{3}" placeholder="123" title="Enter exactly 3 digits" />
+      </label>
+
+      <h3>Autocomplete Attribute</h3>
+      <label>Autocomplete Input:
+        <input type="text" autocomplete="name" placeholder="Try typing your name" />
+      </label>
+
+      <h3>Autofocus Attribute</h3>
+      <label>Autofocus Input:
+        <input type="text" autofocus placeholder="This input gets focus on page load" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Related Output Elements</legend>
+
+      <h3>Output Element</h3>
+      <label>
+        <input type="number" id="num1" value="10" /> +
+        <input type="number" id="num2" value="20" /> =
+        <output id="result">30</output>
+      </label>
+
+      <script>
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        const result = document.getElementById("result");
+
+        function updateResult() {
+          result.textContent = Number(num1.value) + Number(num2.value);
+        }
+
+        num1.addEventListener("input", updateResult);
+        num2.addEventListener("input", updateResult);
+      </script>
+
+      <h2>Progress Element</h2>
+      <label for="download">Download Progress:</label>
+      <progress id="download" value="70" max="100"></progress> 70%
+
+      <h2>Meter Element</h2>
+      <label for="disk">Disk Usage:</label>
+      <meter id="disk" value="75" min="0" max="100" low="40" high="80" optimum="60"></meter> 75%
+    </fieldset>
+  </body>
+</html>

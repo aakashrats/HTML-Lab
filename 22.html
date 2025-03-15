@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset with Tables</title>
+</head>
+<body>
+    <h1>Demonstrating Fieldset with Tables</h1>
+    <p>This example shows how fieldsets can be used to group table and form elements.</p>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table border="1">
+            <tr>
+                <th colspan="2">Contact Details</th>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" placeholder="Enter first name"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" placeholder="Enter last name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="Enter email"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" placeholder="Enter phone number"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Address Information</legend>
+        <table border="1">
+            <tr>
+                <th colspan="2">Mailing Address</th>
+            </tr>
+            <tr>
+                <td>Street:</td>
+                <td><input type="text" placeholder="Enter street"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" placeholder="Enter city"></td>
+            </tr>
+            <tr>
+                <td>State/Province:</td>
+                <td><input type="text" placeholder="Enter state"></td>
+            </tr>
+            <tr>
+                <td>Postal Code:</td>
+                <td><input type="text" placeholder="Enter postal code"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" placeholder="Enter country"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Employment History</legend>
+        <p>Please list your last two employers:</p>
+
+        <table border="1">
+            <tr>
+                <th colspan="2">Most Recent Employer</th>
+            </tr>
+            <tr>
+                <td>Company Name:</td>
+                <td><input type="text" placeholder="Enter company name"></td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td><input type="text" placeholder="Enter position"></td>
+            </tr>
+            <tr>
+                <td>Years Employed:</td>
+                <td><input type="text" placeholder="Enter years employed"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <tr>
+                <th colspan="2">Previous Employer</th>
+            </tr>
+            <tr>
+                <td>Company Name:</td>
+                <td><input type="text" placeholder="Enter company name"></td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td><input type="text" placeholder="Enter position"></td>
+            </tr>
+            <tr>
+                <td>Years Employed:</td>
+                <td><input type="text" placeholder="Enter years employed"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Submit Application</legend>
+        <table border="1">
+            <tr>
+                <td>
+                    <input type="checkbox" id="certify">
+                    <label for="certify">I certify that all information provided is correct.</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Submit Application">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

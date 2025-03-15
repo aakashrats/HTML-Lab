@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved HTML Forms</title>
+</head>
+<body>
+
+   <h2>HTML Forms Demonstration</h2> 
+
+   <!-- Contact Form -->
+   <h3>1. Contact Form</h3>
+   <fieldset>
+
+       <legend>Personal Information</legend>
+       
+       <form id="contactForm">
+           <label for="name">Full Name:</label>
+           <input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+
+           <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+           <label for="tel">Phone Number:</label>
+           <input type="tel" id="tel" name="tel" placeholder="123-456-789" required><br><br>
+
+           <label for="message">Your Message:</label><br>
+           <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..." required></textarea><br>
+           <p><span id="charCount">0</span>/200 characters</p><br>
+
+           <input type="checkbox" id="subscribe" name="subscribe">
+           <label for="subscribe">Subscribe to our newsletter</label><br><br>
+
+           <input type="submit" value="Submit">&nbsp;
+           <input type="reset" value="Clear Form">
+       </form>
+   </fieldset>
+
+   <!-- User Registration Form -->
+   <h3>2. User Registration Form</h3>
+   <fieldset>
+       <legend>Create Account</legend>
+       <form id="registerForm">
+           <label for="username">Username:</label>
+           <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+           <label for="password">Password:</label>
+           <input type="password" id="password" name="password" placeholder="Enter password" required>
+           <button type="button" onclick="togglePassword('password')">Show</button><br><br>
+
+           <label for="confirmpassword">Confirm Password:</label>
+           <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm password" required>
+           <button type="button" onclick="togglePassword('confirmpassword')">Show</button><br><br>
+
+           <label for="dob">Date of Birth:</label>
+           <input type="date" id="dob" name="dob" required><br><br>
+
+           <label>Gender:</label><br>
+           <input type="radio" name="gender" value="male"> Male<br>
+           <input type="radio" name="gender" value="female"> Female<br>
+           <input type="radio" name="gender" value="other"> Other<br><br>
+
+           <label for="country">Country:</label>
+           <select id="country" name="country" required>
+               <option value="" disabled selected>Select Country</option>
+               <option value="India">India</option>
+               <option value="USA">USA</option>
+               <option value="UK">UK</option>
+           </select>
+           <p id="selectedCountry"></p><br>
+
+           <input type="checkbox" id="terms" name="terms" required>
+           <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label><br><br>
+
+           <input type="submit" value="Register">
+       </form>
+   </fieldset>
+
+   <!-- Customer Feedback Survey -->
+   <h3>3. Customer Feedback Survey</h3>
+   <fieldset>
+       <legend>Survey Information</legend>
+       <form id="surveyForm">
+           <label for="range">How satisfied are you with our service?</label><br>
+           <input type="range" id="range" name="range" min="1" max="10"> 5/10<br><br>
+
+           <label>Which product have you used? (Select all that apply)</label><br>
+           <input type="checkbox" name="product" value="A"> Product A<br>
+           <input type="checkbox" name="product" value="B"> Product B<br>
+           <input type="checkbox" name="product" value="C"> Product C<br><br>
+
+           <label for="recommend">How often do you recommend us?</label><br>
+           <select id="recommend" name="recommend" required>
+               <option value="" disabled selected>Select an option</option>
+               <option value="Always">Always</option>
+               <option value="Sometimes">Sometimes</option>
+               <option value="Never">Never</option>
+           </select><br><br>
+
+           <label for="feedback">Do you have any suggestions for improvement?</label><br>
+           <textarea id="feedback" name="feedback" rows="5" cols="40" required></textarea><br><br>
+
+           <label>How likely are you to suggest improvements?</label><br>
+           <input type="radio" name="improve" value="Very Likely"> Very Likely<br>
+           <input type="radio" name="improve" value="Likely"> Likely<br>
+           <input type="radio" name="improve" value="Neutral"> Neutral<br>
+           <input type="radio" name="improve" value="Unlikely"> Unlikely<br>
+           <input type="radio" name="improve" value="Very Unlikely"> Very Unlikely<br><br>
+
+           <input type="submit" value="Submit Survey">
+       </form>
+   </fieldset>
+
+   <script>
+       // Toggle Password Visibility
+       function togglePassword(fieldId) {
+           let field = document.getElementById(fieldId);
+           field.type = field.type === "password" ? "text" : "password";
+       }
+
+       // Live Display Selected Country
+       document.getElementById("country").addEventListener("change", function () {
+           document.getElementById("selectedCountry").innerText = "You selected: " + this.value;
+       });
+
+       // Character Counter for Feedback
+       document.getElementById("feedback").addEventListener("input", function () {
+           let maxLength = 200;
+           let currentLength = this.value.length;
+           document.getElementById("charCount").innerText = currentLength;
+           if (currentLength > maxLength) {
+               this.value = this.value.substring(0, maxLength);
+           }
+       });
+
+       // Form Validation
+       document.querySelectorAll("form").forEach(form => {
+           form.addEventListener("submit", function (event) {
+               let isValid = true;
+               form.querySelectorAll("input[required], textarea[required], select[required]").forEach(input => {
+                   if (!input.value.trim()) {
+                       isValid = false;
+                       input.style.border = "2px solid red";
+                   } else {
+                       input.style.border = "";
+                   }
+               });
+
+               if (!isValid) {
+                   event.preventDefault();
+                   alert("Please fill all required fields.");
+               }
+           });
+       });
+   </script>
+
+</body>
+</html>
