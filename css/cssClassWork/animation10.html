@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	  .main{
+	    display:flex;
+		font-size:150px;
+		justify-content:center;
+		color:blue;
+	  }
+	  @keyframes bounce
+	  {
+		100%{ transform:translateY(-40px); }
+	  }
+	  
+	  .main div{
+	     animation:bounce 1s infinite linear alternate;
+	  }
+	  .main div:nth-child(2){
+	     animation-delay: 500ms
+	  }
+	  .main div:nth-child(3){
+	     animation-delay: 900ms;
+	  }
+	</style>
+  </head>
+  <body>
+	<h1>bounce animation</h1>
+	<div class="main">
+		<div>.</div>
+		<div>.</div>
+		<div>.</div>
+	</div>
+ 
+  </body>
+</html>
+	 

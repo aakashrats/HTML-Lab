@@ -1,0 +1,46 @@
+<!--
+child selector
+=>used to define/to apply same styles for all child eles, grand child, and so on
+Syn:
+		gpt  pt  ct{
+		   prop:val;
+		   ......
+		}
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	  ol  li{
+		color:red;
+		list-style-type:telugu;
+	/* upper-alpha, lower-alpha, decimal, lower-roman, upper-roman, disc, circle, square, none, decimal-leading-zero, lower-greek, kannada, tamil, oriya, devanagari ...   */
+	  }
+	  ul  li{
+	    color:blue;
+		/*
+		list-style-type:"\1F431";	*/
+		list-style-image:url(images/bt.png);		
+	  }
+	</style>
+  </head>
+  <body>
+	<h3>demo on child selector</h3>
+	<ol>
+		<li>HTML</li>	<li>CSS</li>	
+		<li>Javascript</li>	<li>BootStrap</li>
+		<li>ReactJS</li>
+	</ol>
+	
+	<ul>
+		<li>Java</li>	<li>Python</li>
+		<li>Dot.Net</li>	<li>PHP</li>
+	</ul>
+	
+	
+	<li>Apple</li>
+	<li>Mango</li>
+	
+  </body>
+</html>

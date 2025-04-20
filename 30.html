@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 30</title>
+    <style>
+        .box{
+            display: grid;
+            grid-template-columns: repeat(5, 3fr); 
+            gap: 20px;
+            justify-items:center;
+            padding: 20px;
+        }
+        .box div{
+            height: 150px;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #div1{ border: 2px solid; background: lightblue; }
+        #div2{ background-color: aquamarine; border: solid; }
+        #div3{ background-color: brown; padding: 20px 30px; border: solid; }
+        #div4{ background-color: antiquewhite; margin: 20px; border: solid; }
+        #div5{ background-color: darksalmon; border-radius: 10px; border: solid; }
+        #div6{ background-color: cyan; border: solid; box-shadow: 5px 5px 10px gray; }
+        #div7 img{ border: solid; height: 150px; width: 100px; }
+        #div8{ background-color: aquamarine; display: grid;border:solid;}
+        #div9{ border: 10px solid; border-image-source: url("./img/kolkata.jpeg"); border-image-slice: 30; }
+        #div10{ border: double; background-color: blanchedalmond; }
+        #div11{ border: dotted; background-color: cadetblue; }
+        #div12{ background-color: darkcyan; border: dashed; }
+        #div13{ display: flex; align-items: center; justify-content: center; border: solid; }
+        #div14{ overflow: scroll; background-color: gray; border: solid; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="div1">Content Box</div>
+        <div id="div2">Border Box</div>
+        <div id="div3">Padding Box</div>
+        <div id="div4">Margin Box</div>
+        <div id="div5">Rounded Box</div>
+        <div id="div6">Shadow Box</div>
+        <div id="div7"><img src="./img/chennai.jpeg" alt="">Image Box</img> </div>
+        <div id="div8">Border Image Box</div>
+        <div id="div9">Gradient Box</div>
+        <div id="div10">Double Border</div>
+        <div id="div11">Dotted Border</div>
+        <div id="div12">Dashed Border</div>
+        <div id="div13">Centered Box</div>
+        <div id="div14">Scroll Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!--
+direct child selector
+=>used to define/to apply same styles for all child eles only
+Syn:
+		gpt > pt > ct{
+		   prop:val;
+		   ......
+		}
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	   div > a{
+	     color:red;
+		 text-decoration:none;
+			/* underline, line-through, overline */
+	   }
+	   ul > li > a{
+		 color:green;
+	   }   
+	</style>
+  </head>
+  <body>
+	<h3>demo on direct child selector</h3>
+
+	<a href="">goto page1</a> <Br>
+	<a href="">goto page2</a> <br>
+	
+	<div>
+		<a href="">goto page3</a> <br>
+		<a href="">goto page4</a> 
+		<p>
+			<a href="">goto page5</a>
+		</p>
+	</div>
+	
+	<ul>
+	   <li> <a href="">google</a> </li>
+	   <li> <a href="">youtube</a> </li>
+	   <li> 
+		  <strong> <a href="">facebook</a> </strong>
+	   </li>
+	</ul>
+	
+		
+	
+	
+	 
+  </body>
+</html>

@@ -1,0 +1,433 @@
+body{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+
+}
+/* header section start */
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: red; 
+
+}
+.heading{
+margin-left: 10%;
+cursor: pointer;
+font-size: 20px;
+position: fixed;
+
+
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 55%;
+    gap: 20px;
+    padding:20px 20px;
+    position: fixed;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: gray;
+}
+/* header section End */
+
+/* Introduction section start */
+.section-intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.icon-intro img{
+  width: 300px;
+  height: 300px;
+  border: solid gray;
+  margin-left: 50%;
+  margin-top: 65%;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+
+}
+.content-intro{
+    margin-right: 20% ;
+    margin-top: 11%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+   
+}
+.content-intro p{
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.content-intro h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.resume-contactInfo{
+    margin-top: 50px;
+    
+}
+.resume-contactInfo a{
+   margin: 0 10px;
+    border: solid gray; 
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+      
+}
+.icon-linkgit a{
+   text-decoration: none;
+}
+.icon-linkgit a img{
+    margin: 40px 10px;
+    height: 50px;
+    width: 40px;
+}
+
+/* Introduction section End */
+
+/* About section startgruop section Experience section start project section project section */
+
+.section-about, .explore-section ,.project-section{
+    
+    margin-top:5%;
+    justify-items: center;
+    height: 100vh;
+    cursor: pointer;
+}
+.about-intro,.explore-intro,.project-intro,.contact-intro {
+    text-align: center;
+ 
+}
+.about-intro p,.explore-intro p ,.project-intro p,.contact-intro p{
+    color: gray;
+    font-size: 1.5em;
+}
+.about-intro h2,.explore-intro h3,.project-intro h3,.contact-intro h3{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.Edu-container{
+    border: solid gray;
+    border-radius: 40px;
+    text-align: center;
+    padding:30px;
+    margin: 0 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+.about-container h3{
+    font-weight: bold;
+}
+
+.about-container p{
+    color: gray;
+}
+.paragrap{
+    margin: 30px;
+    padding: 30px;
+    text-align: start;
+    font-weight: 200;
+   
+}
+
+
+/* About section End */
+
+/* Experience section start */
+
+.explore-container{
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    
+    
+}
+.tools-container{
+    border: solid gray;
+    border-radius: 40px;
+    text-align: center;
+    width: 30%;
+    
+}
+.tools-container h4{
+    font-weight: bold;
+    font-size: 1em;
+}
+.Technology-container{
+    display: grid;
+    grid-template-columns:auto auto;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 80%;
+     
+  }
+  .Technology-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+.Technology-container img   {
+    height:50px;
+    width: 50px;
+     
+}
+.Technology-container label   {
+   font: 12px;
+    
+}
+.Technology-container   {
+    height:200%;
+    width: 200%;
+     
+ }
+
+ .project-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    
+    
+    }
+    .procontainer {
+        border: solid gray;
+        border-radius: 40px;
+        text-align: center;
+        max-width: 30%;
+        max-height: 600px;
+       
+      }
+     
+
+      .procontainer h5{
+        font-size: 1.5em;
+      }
+
+    .procontainer img{
+         width: 250px;
+         height: 150px;
+     }
+
+     .procontainer a{
+        text-decoration: none;
+        border: solid gray;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin: 20px;
+     }
+     .contact-part{
+        border: solid gray ;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        border-radius: 40px;
+     }
+    .emailpart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+        
+        
+    }
+    
+    .emailpart img,.linkpart img{
+        width: 40px;
+        height: 40px;
+
+       
+    }
+    .emailpart a{
+        text-decoration: none;
+        color: blue;
+    }
+    .lidpart{
+
+        display: flex   ;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+        gap:10px;
+    }
+    .contact-section, .footer-container{
+    
+        margin-top:10%;
+        justify-items: center;
+        cursor: pointer;
+    }
+    .fnavbar {
+        display: flex;
+        justify-content: center;
+        gap:30px;
+
+    }
+    .fnavbar a{
+        text-decoration: none;
+         color: gray;
+         font-size: 1.2em
+    }
+    .footer-data{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2em;
+     
+    }
+
+
+    /* responice nace  */
+
+    /* === Responsive Design === */
+
+/* Mobile First (for screen width <= 768px) */
+@media screen and (max-width: 768px) {
+
+    .header-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      position: static;
+    }
+  
+    .heading {
+      margin-left: 0;
+      position: static;
+    }
+  
+    .navigation {
+      margin: 0;
+      flex-direction: column;
+      gap: 10px;
+      position: static;
+    }
+  
+    .section-intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .icon-intro img {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+    }
+  
+    .content-intro {
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Edu-container {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .explore-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: auto;
+    }
+  
+    .tools-container {
+      width: 90%;
+    }
+  
+    .Technology-container {
+      grid-template-columns: auto;
+      justify-items: center;
+    }
+  
+    .project-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .procontainer {
+      max-width: 90%;
+    }
+  
+    .contact-part {
+      flex-direction: column;
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .fnavbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-data {
+      font-size: 1em;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet Devices (768px - 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navigation {
+      margin-left: 30%;
+    }
+  
+    .icon-intro img {
+      width: 250px;
+      height: 250px;
+      margin-left: 0;
+    }
+  
+    .content-intro {
+      margin-top: 15%;
+      padding: 20px;
+    }
+  
+    .explore-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .tools-container {
+      width: 80%;
+    }
+  
+    .project-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .procontainer {
+      max-width: 45%;
+    }
+  }
+  

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        .Box-shadow {
+            display: flex;
+            margin: 60px;
+            justify-content: space-between;
+
+        }
+
+        .green {
+
+            background-color: green;
+            border-radius: 10px;
+            box-shadow: 10px 0px 0px 0px yellow;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .red {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        .blue {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px red;
+        }
+
+        .yellow {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 12px rgb(102, 103, 101);
+        }
+
+        .text {
+            margin-left: 50%;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        #text1 {
+            color: gray;
+        }
+
+        #text2 {
+            color: rgb(143, 47, 47);
+        }
+
+        #text3 {
+            color: rgb(65, 45, 244);
+        }
+
+        #text4 {
+            color: lightgray;
+        }
+
+        #text5 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box-shadow">
+        <div class="green"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+    </div>
+    <div class="text">
+        <h3 id="text1">hello, Box-shadow 1!</h3>
+        <h3 id="text2">hello, Box-shadow 2!</h3>
+
+        <h3 id="text3">hello, Box-shadow 3!</h3>
+        <h3 id="text4">hello, Box-shadow 4!</h3>
+
+        <h3 id="text5">hello, Box-shadow 5!</h3>
+
+    </div>
+</body>
+
+</html>

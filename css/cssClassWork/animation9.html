@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	  @keyframes moving
+	  {
+	    0{ transform:translate(1px,1px); }
+		30%{ transform:translate(1250px,1px); }
+		50%{ transform:translate(1250px,580px); }
+		80%{ transform:translate(1px,580px); }
+		100%{ transform:translate(1px,1px); }
+	  }
+	   h1{
+		display:inline-block;
+		position:absolute;	   
+	   }
+	  .a1{
+		animation:moving 10s infinite linear;
+	  }
+	  .a2{
+		animation:moving 10s infinite linear reverse;
+	  }
+	</style>
+  </head>
+  <body>
+	<!-- text moving animation -->
+	<h1 class="a1">Hello</h1>
+	<h1 class="a2">&#128525;</h1>
+  </body>
+</html>
+	 

@@ -1,0 +1,313 @@
+1. Which keyword is used to declare a variable in ES6 that can be reassigned later?
+a) var
+b) let
+c) const
+d) static
+
+b) let
+
+
+2. Which variable declaration is immutable (cannot be reassigned)?
+a) let
+b) const
+c) var
+d) static
+
+b) const
+
+
+3. Which of the following data types is not primitive in JavaScript?
+a) string
+b) number
+c) object
+d) Boolean
+
+c) object
+
+
+4. What will the following code output? let a; console.log(a);
+a) null
+b) 0
+c) undefined
+d) ""
+
+c) undefined
+
+
+5. Which of these data types is falsy in JavaScript?
+a) true
+b) "0"
+c) 0
+d) "false"
+
+c) 0
+
+6. What is the result of typeof NaN?
+a) number
+b) string
+c) NaN
+d) undefined
+
+a) number
+
+
+7. How many primitive data types are there in JavaScript (ES6+)?
+a) 5
+b) 6
+c) 7
+d) 8
+
+c) 7
+
+8. Which of the following is a valid variable name?
+a) 123name
+b) let
+c) _myVar
+d) var-name
+
+c) _myVar
+
+
+9. Variables declared with let are scoped to:
+a) Function
+b) Global
+c) Block
+d) Script
+
+c) Block
+
+
+
+10. Which statement is true about const declarations?
+a) You can reassign const
+b) const variables must be initialized
+c) const allows hoisting with undefined
+d) const behaves like var
+
+b) const variables must be initialized
+
+
+11. Which of the following is a dynamic type in JavaScript?
+a) JavaScript does not support dynamic typing
+b) Type must be declared
+c) Variable can hold multiple types
+d) Only numbers are dynamic
+
+c) Variable can hold multiple types
+
+
+
+12. What will typeof undefined return?
+a) null
+b) undefined
+c) object
+d) string
+
+b) undefined
+
+13. Which keyword can cause a Temporal Dead Zone error if accessed before initialization?
+a) var
+b) const
+c) let
+d) Both b and c
+
+d) Both b and c
+
+14. Which of the following is not a primitive data type in JavaScript?
+a) symbol
+b) bigint
+c) object
+d) string
+
+c) object
+
+
+15. What does the following return: typeof "hello"?
+a) text
+b) string
+c) character
+d) object
+
+b) string
+
+
+16. Which of these is a correct variable declaration?
+a) let 123var;
+b) var my-Name;
+c) const value = 10;
+d) let const = 5;
+	
+c) const value = 10;
+
+17.Which of the following data types is not mutable in JavaScript?
+a) Object
+b) Array
+c) String
+d) Function
+
+c) String
+
+18. What is the output of let a = null; console.log(typeof a);?
+a) null
+b) object
+c) undefined
+d) string
+
+b) object
+
+19. Which of these variable declarations can be updated later?
+a) const a = 10;
+b) let a = 10;
+c) Both a and b
+d) None
+
+b) let a = 10;
+
+
+
+20. Which of these will result in true?
+a) typeof null === "null"
+b) typeof null === "object"
+c) typeof null === "undefined"
+d) typeof null === "function"
+
+b) typeof null === "object"
+
+
+21. What happens if you redeclare a let variable in the same scope?
+a) It overwrites the previous one
+b) No error
+c) SyntaxError
+d) Returns undefined
+
+c) SyntaxError
+
+22. Which of the following statements about NaN is true?
+a) NaN === NaN is true
+b) typeof NaN is number
+c) NaN is a keyword
+d) NaN is undefined
+
+b) typeof NaN is number
+
+23. Which value is NOT considered falsy in JavaScript?
+a) null
+b) 0
+c) "false"
+d) undefined
+
+c) "false"
+
+
+
+24. What will typeof null === "object" evaluate to?
+a) true
+b) false
+c) SyntaxError
+d) undefined
+
+a) true
+
+25. Which of the following keywords allows redeclaration in the same scope?
+a) var
+b) let
+c) const
+d) None
+
+a) var
+
+
+26. What is the correct way to declare a variable that can change later?
+a) const x = 10;
+b) let x = 10;
+c) final x = 10;
+d) fixed x = 10;
+
+b) let x = 10;
+
+27. What will typeof undefined === undefined return?
+a) true
+b) false
+c) SyntaxError
+d) undefined
+
+b) false
+
+
+28. Which one of these is a correct way to declare multiple variables?
+a) let x = 1, y = 2;
+b) var x = 1 let y = 2;
+c) const x = 1 const y = 2;
+d) var x, const y;
+
+a) let x = 1, y = 2;
+
+29. What is typeof undefined == "undefined"?
+a) true
+b) false
+c) SyntaxError
+d) undefined
+
+a) true
+
+30. Which statement is true for variable declarations using const?
+a) It can be redeclared
+b) It must be initialized
+c) It can be hoisted and used before declaration
+d) It has function scope
+
+b) It must be initialized
+
+31. Which of these is a primitive data type?
+a) Array
+b) Object
+c) Number
+d) Function
+
+c) Number
+
+32. Which of these is valid JavaScript syntax?
+a) let 1var = 10;
+b) const my-var = 10;
+c) let $ = 10;
+d) var let = 10;
+
+c) let $ = 10;
+
+33. What is the result of typeof (NaN)?
+a) NaN
+b) number
+c) undefined
+d) object
+
+b) number
+
+
+34. Which of these is not a JavaScript data type?
+a) number
+b) float
+c) bigint
+d) symbol
+
+b) float
+
+
+35. Which of the following values is a truthy value?
+a) 0
+b) ""
+c) "0"
+d) null
+
+c) "0"
+
+
+36. Which of these is an example of dynamic typing in JavaScript?
+a) Declaring type before assigning
+b) Using int instead of number
+c) Reassigning a variable from a number to a string
+d) Using only let for all variables
+
+c) Reassigning a variable from a number to a string
+
+
+ 

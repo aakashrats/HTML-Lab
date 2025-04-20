@@ -1,0 +1,42 @@
+<!--
+attribute selector
+=> used to define/to apply same styles for all elements based specified attribute
+   Syn:
+	[attribute]	or  tag[attribute]  or [attribute="val"] or	tag[attribute="val"]
+	{
+	   prop:val;
+	   ......
+	}
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	   [type="text"]{
+		  color:red;
+	   }
+	   input[type="checkbox"]{
+	      accent-color:red;
+	   }
+	   [height]{
+		  border-radius:10% 50%;
+	   } 
+	</style>
+  </head>
+  <body>
+	<h3>demo on attribute selector</h3>
+	<input type="text"> <input type="text">
+	<br>
+	<input type="password"> <br>
+	<input type="number"> <br>
+	<img src="images/rose.jpeg" height="150">
+	<img src="images/baby.png" height="150">
+	<img src="images/abc.webp" height="200">
+	<br>
+	<input type="checkbox"> 
+	<input type="checkbox">
+	
+	 
+  </body>
+</html>

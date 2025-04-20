@@ -1,0 +1,158 @@
+/* hedding section */
+.headerpara {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.headerpara img{
+    width: 15rem;
+    height: auto;
+    padding:10px;
+}
+
+/* main content */
+
+.main {
+    
+    margin-top: 5px;
+    padding: 2px;
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .login-info {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    
+    .left {
+        /* border: 1px solid; */
+        width: 50%;
+        margin: 5px;
+        background-image: url("../img/loginpage2.jpg");
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-size:20%  ;
+
+        }
+        .login-form {
+        /* border: 1px solid; */
+        width: 50%;
+        /* margin: 5px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .login-head {
+        text-align: center;
+        /* border: 1px solid; */
+        }
+        form {
+        /* /* border:1px solid;  */
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+margin-top: 3%;
+display: flex;
+flex-direction: column;
+width: 80%;
+padding: 10px;
+border-radius: 5px;
+}
+label {
+margin-top: 5px;
+margin-bottom: 5px;
+margin: 5px;
+}
+input[type="text"] {
+height: 40px;
+border-top: none;
+border-left:none;
+border-right: none;
+border-bottom: 2px solid lightcoral;
+border-radius: 10px;
+/* border-color: lightcoral; */
+padding: 5px;
+padding-left: 60px;
+margin: 5px;
+background-image: url("../img/usericon.png");
+background-size: 40px;
+background-position: 5px 5px;
+background-repeat: no-repeat;
+}
+input[type="text"]:focus {
+border: none;
+border-bottom: 3px solid lightcoral;
+}
+input[type="password"] {
+    height: 40px;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid lightcoral;
+    padding: 5px;
+    margin: 5px;
+    background-image: url("../img/passicon2.png");
+    background-size: 50px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    }
+    input[type="submit"] {
+    margin-top: 4%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: #d7d6d6;
+    padding: 5px;
+    width: 3cm;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    }
+    input[type="submit"]:hover {
+        border: 3px solid green;
+        background-color: green;
+        color: white;
+        width: 3.1cm;
+        height: 42px;
+        }
+        .buttons {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        }
+        .buttons img {
+        width: 30px;
+        }
+        .buttons img:hover {
+        width: 32px;
+        }
+        .buttons a {
+        text-decoration: none;
+        margin: 5px;
+        }
+        .buttons a:hover {
+        font-weight: bolder;
+    
+        }
+
+
+
+
+
+/* footer section */
+.footerpara{
+    color: gray;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: auto;
+    padding: 20px;
+}

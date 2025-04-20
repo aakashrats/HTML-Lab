@@ -1,0 +1,39 @@
+<!--
+id selector
+=> used to define/to apply style for specific element
+=> inline styles
+Syn:
+		#id-name{
+		   prop:val;
+		   ......
+		}
+
+mapping:
+	<tag  id="id-name">
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	  #id1{ 
+		background-color:cyan; 
+		color:blue;
+	  }
+	  #id2{
+		width:50%;
+		background-color:pink;
+	    text-align:center;
+	  }
+	</style>
+  </head>
+  <body>
+	<h3>demo on id selector</h3>
+	<h1 id="id1">Red Apple</h1>
+	<p id="id2">
+	This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or at your option any later version.</p>
+	
+	<h2 id="id1">Yellow Mango</h2>  <!-- invalid -->
+	<div id="id1 id2">Black Grape</div> <!-- invalid -->
+  </body>
+</html>

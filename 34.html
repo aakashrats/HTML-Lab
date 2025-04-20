@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Alert Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .alert-box {
+      display: none; /* hidden by default */
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f44336;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .alert-box button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background-color: white;
+      color: #f44336;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .alert-box button:hover {
+      background-color: #ffe5e5;
+    }
+
+    .show-btn {
+      margin: 50px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .okbttn{
+        margin-left: 50% ;    }
+  </style>
+</head>
+<body>
+
+  <button class="show-btn" onclick="showAlert()">Show Alert</button>
+
+  <div class="alert-box" id="customAlert">
+    <p>This is a custom alert box!</p>
+    <button class="okbttn" onclick="hideAlert()">OK</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      document.getElementById("customAlert").style.display = "block";
+    }
+
+    function hideAlert() {
+      document.getElementById("customAlert").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

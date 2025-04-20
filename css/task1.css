@@ -1,0 +1,85 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    overflow: hidden;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.card{
+    flex: 1;
+  padding: 40px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+
+.orange {  
+    background-color:#e28827; /* Adjusted for a more vibrant look */  
+}  
+
+.teal {  
+    background-color: #00696f; /* Teal color */  
+}  
+
+.dark-green {  
+    background-color: #004241; /* Dark green color */  
+}
+
+h2{
+    font-size: 22px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+ p{
+    font-size: 16px;
+    line-height: 1.5;
+   
+}
+.learn-more{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.learn-more:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
