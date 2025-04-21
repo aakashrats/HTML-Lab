@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Discount Calculator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="number"] {
+      width: 95%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .output {
+      margin-top: 20px;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 15px;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Ticket Calculator</h2>
+    <!-- <form id="ticketForm"> -->
+      <label for="tickets">Number of Tickets</label>
+      <input type="number" id="tickets" min="1" required>
+
+      <label for="age">Passenger's Age</label>
+      <input type="number" id="age" min="0" required>
+
+      <button type="submit" onclick="busBill()">Calculate</button>
+    <!-- </form> -->
+
+    <div class="output" id="output" style="display: none;"></div>
+  </div>
+
+  <script>
+   
+      function busBill() {
+        
+      const output = document.getElementById('output');
+       
+      const tickets = parseInt(document.getElementById('tickets').value);
+      const age = parseInt(document.getElementById('age').value);
+      const ticketPrice = 300;
+
+      const totalCost = tickets * ticketPrice;
+
+      
+      const discount = (age >= 60) ? totalCost * 0.20 : 0;
+      const finalCost = totalCost - discount;
+
+      output.innerHTML = `
+        <strong>Total cost before discount:</strong> Rs. ${totalCost.toFixed(2)}<br>
+        <strong>Discount amount:</strong> Rs. ${discount.toFixed(2)}<br>
+        <strong>Total cost after discount:</strong> Rs. ${finalCost.toFixed(2)}
+      `;
+      output.style.display = 'block';
+      }
+    
+  </script>
+
+
+</body>
+</html>
